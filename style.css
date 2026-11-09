@@ -1,0 +1,828 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+
+/* Desktop */
+
+.desktop {
+    width: 100vw;
+    height: 100vh;
+
+    position: relative;
+
+    background-image: url("images/dark.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+}
+
+
+/* Top bar */
+
+.topbar {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 20px;
+
+    background: rgba(8, 10, 18, 0.78);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+
+    backdrop-filter: blur(12px);
+
+    z-index: 1000;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.brand-icon {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background: linear-gradient(
+        135deg,
+        #8d4cff,
+        #45d7ff
+    );
+
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.top-right {
+    margin-left: auto;
+
+    display: flex;
+
+    gap: 18px;
+
+    color: #ddd;
+
+    font-size: 13px;
+}
+
+
+/* Desktop icons */
+
+.desktop-icons {
+    position: absolute;
+
+    top: 78px;
+    left: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+
+    z-index: 2;
+}
+
+.app {
+    width: 86px;
+    height: 86px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 6px;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    user-select: none;
+}
+
+.app:hover {
+    background: rgba(255, 255, 255, 0.13);
+}
+
+.app img {
+    width: 45px;
+    height: 45px;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+.app span {
+    display: block;
+
+    width: 100%;
+
+    color: white;
+
+    font-size: 12px;
+
+    text-align: center;
+
+    line-height: 16px;
+
+    text-shadow:
+        0 1px 4px #000,
+        0 0 4px #000;
+}
+
+
+/* Windows */
+
+.window {
+    position: absolute;
+
+    top: 100px;
+    left: 200px;
+
+    width: 470px;
+    height: 350px;
+
+    display: none;
+
+    background: rgba(18, 20, 29, 0.97);
+
+    border: 1px solid rgba(255, 255, 255, 0.14);
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    resize: both;
+
+    min-width: 320px;
+    min-height: 220px;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.55);
+
+    z-index: 100;
+}
+
+
+/* Window bar */
+
+.window-bar {
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 15px;
+    padding-right: 10px;
+
+    background: rgba(35, 38, 49, 0.98);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+    cursor: move;
+
+    user-select: none;
+}
+
+.window-bar > span {
+    font-size: 13px;
+}
+
+.window-buttons {
+    margin-left: auto;
+
+    display: flex;
+
+    gap: 4px;
+}
+
+.window-buttons button {
+    width: 28px;
+    height: 26px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: transparent;
+
+    color: #ddd;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+.window-buttons button:hover {
+    background: rgba(255, 255, 255, 0.13);
+}
+
+.window-buttons .close:hover {
+    background: #d94141;
+    color: white;
+}
+
+
+/* Window content */
+
+.window-content {
+    height: calc(100% - 44px);
+
+    padding: 22px;
+
+    overflow: auto;
+}
+
+.window-content h1 {
+    font-size: 22px;
+
+    margin-bottom: 8px;
+}
+
+.window-content h2 {
+    font-size: 15px;
+
+    margin-bottom: 10px;
+}
+
+.small-text {
+    color: #aaa;
+
+    font-size: 13px;
+
+    margin-bottom: 18px;
+}
+
+
+/* Files */
+
+.file-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.file-item {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 12px;
+
+    border-radius: 8px;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    cursor: pointer;
+}
+
+.file-item:hover {
+    background: rgba(255, 255, 255, 0.11);
+}
+
+.file-item > span {
+    font-size: 24px;
+}
+
+.file-item strong {
+    display: block;
+
+    font-size: 13px;
+}
+
+.file-item small {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #999;
+}
+
+
+/* Calculator */
+
+.calculator-window {
+    width: 380px;
+    height: 475px;
+}
+
+#calculatorDisplay {
+    width: 100%;
+    height: 55px;
+
+    margin-bottom: 12px;
+
+    padding: 10px;
+
+    background: #0d0f14;
+
+    color: white;
+
+    border: 1px solid #292d38;
+
+    border-radius: 8px;
+
+    font-size: 23px;
+
+    text-align: right;
+
+    outline: none;
+}
+
+.calculator {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 7px;
+}
+
+.calculator button {
+    height: 52px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #292d38;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.calculator button:hover {
+    background: #383d4a;
+}
+
+#equals {
+    background: #6650d9;
+}
+
+#clear {
+    grid-column: span 4;
+
+    background: #452b36;
+}
+
+
+/* Notes */
+
+.notes-window {
+    width: 520px;
+    height: 420px;
+}
+
+#notesText {
+    width: 100%;
+    height: 270px;
+
+    padding: 14px;
+
+    resize: none;
+
+    background: #0d0f14;
+
+    color: white;
+
+    border: 1px solid #292d38;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    font-family: Arial, sans-serif;
+
+    line-height: 1.5;
+}
+
+.save-text {
+    margin-top: 8px;
+
+    color: #777;
+
+    font-size: 11px;
+}
+
+
+/* Settings */
+
+.settings-box {
+    padding: 15px;
+
+    margin-bottom: 12px;
+
+    border-radius: 9px;
+
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.settings-box p {
+    margin-top: 7px;
+
+    color: #bbb;
+
+    font-size: 13px;
+}
+
+
+/* Browser */
+
+.browser-window {
+    width: 760px;
+    height: 520px;
+}
+
+.browser-content {
+    height: calc(100% - 44px);
+
+    padding: 10px;
+}
+
+.browser-search {
+    display: flex;
+
+    gap: 6px;
+
+    height: 38px;
+
+    margin-bottom: 10px;
+}
+
+.browser-search button {
+    width: 38px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #292d38;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+.browser-search button:hover {
+    background: #3b4050;
+}
+
+.browser-search #browserGo {
+    width: 55px;
+
+    background: #6650d9;
+}
+
+.browser-search input {
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 0 12px;
+
+    background: #0d0f14;
+
+    color: white;
+
+    border: 1px solid #303542;
+
+    border-radius: 7px;
+
+    outline: none;
+}
+
+.browser-page {
+    position: relative;
+
+    width: 100%;
+    height: calc(100% - 48px);
+
+    background: white;
+
+    border-radius: 7px;
+
+    overflow: hidden;
+}
+
+#browserFrame {
+    width: 100%;
+    height: 100%;
+
+    border: none;
+
+    display: none;
+
+    background: white;
+}
+
+#browserMessage {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 90%;
+
+    text-align: center;
+
+    color: #333;
+}
+
+#browserMessage h2 {
+    margin-top: 12px;
+
+    font-size: 21px;
+}
+
+#browserMessage p {
+    margin-top: 7px;
+
+    color: #777;
+
+    font-size: 13px;
+}
+
+.browser-logo {
+    width: 55px;
+    height: 55px;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: linear-gradient(
+        135deg,
+        #8d4cff,
+        #45d7ff
+    );
+
+    color: white;
+
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.browser-links {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    margin-top: 18px;
+}
+
+.browser-links button {
+    padding: 8px 12px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #eee;
+
+    color: #333;
+
+    cursor: pointer;
+}
+
+.browser-links button:hover {
+    background: #ddd;
+}
+
+.browser-error {
+    margin-top: 18px;
+
+    padding: 9px 14px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #6650d9;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+
+/* Themes */
+
+.themes-window {
+    width: 550px;
+    height: 390px;
+}
+
+.theme-list {
+    display: flex;
+
+    gap: 16px;
+
+    flex-wrap: wrap;
+}
+
+.theme {
+    width: 150px;
+
+    cursor: pointer;
+
+    text-align: center;
+}
+
+.theme img {
+    width: 150px;
+    height: 90px;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 9px;
+
+    border: 2px solid transparent;
+}
+
+.theme:hover img {
+    border-color: white;
+}
+
+.theme span {
+    display: block;
+
+    margin-top: 8px;
+
+    color: white;
+
+    font-size: 13px;
+
+    text-align: center;
+}
+
+
+/* Bottom dock */
+
+.dock {
+    position: absolute;
+
+    bottom: 14px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    min-width: 430px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 7px 12px;
+
+    background: rgba(12, 14, 22, 0.86);
+
+    border: 1px solid rgba(255, 255, 255, 0.13);
+
+    border-radius: 15px;
+
+    backdrop-filter: blur(15px);
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.4);
+
+    z-index: 1000;
+}
+
+.dock-brand {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    padding-right: 10px;
+
+    border-right: 1px solid rgba(255, 255, 255, 0.12);
+
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.brand-icon.small {
+    width: 30px;
+    height: 30px;
+
+    font-size: 18px;
+
+    border-radius: 8px;
+}
+
+.dock-apps {
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+}
+
+.dock-app {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 9px;
+
+    cursor: pointer;
+}
+
+.dock-app:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.dock-app img {
+    width: 28px;
+    height: 28px;
+
+    object-fit: contain;
+}
+
+.dock-right {
+    display: flex;
+
+    gap: 10px;
+
+    padding-left: 8px;
+
+    border-left: 1px solid rgba(255, 255, 255, 0.12);
+
+    color: #ccc;
+
+    font-size: 14px;
+}
+
+
+/* Small screens */
+
+@media (max-width: 800px) {
+
+    .dock {
+        width: calc(100% - 20px);
+        min-width: 0;
+    }
+
+    .dock-brand span {
+        display: none;
+    }
+
+    .browser-window {
+        width: 90vw;
+        height: 65vh;
+    }
+
+}
