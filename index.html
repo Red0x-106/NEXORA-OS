@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NEXORA OS</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="desktop">
+
+        <!-- Top bar -->
+
+        <div class="topbar">
+
+            <div class="brand">
+
+                <div class="brand-icon">
+                    N
+                </div>
+
+                <span>NEXORA OS</span>
+
+            </div>
+
+            <div class="top-right">
+
+                <span id="date"></span>
+                <span id="clock"></span>
+
+            </div>
+
+        </div>
+
+
+        <!-- Desktop apps -->
+
+        <div class="desktop-icons">
+
+            <div class="app" data-window="filesWindow">
+                <img src="images/files.png">
+                <span>Files</span>
+            </div>
+
+            <div class="app" data-window="calculatorWindow">
+                <img src="images/calculator.png">
+                <span>Calculator</span>
+            </div>
+
+            <div class="app" data-window="notesWindow">
+                <img src="images/notes.png">
+                <span>Notes</span>
+            </div>
+
+            <div class="app" data-window="settingsWindow">
+                <img src="images/setting.png">
+                <span>Settings</span>
+            </div>
+
+            <div class="app" data-window="browserWindow">
+                <img src="images/browser.png">
+                <span>Browser</span>
+            </div>
+
+            <div class="app" data-window="themesWindow">
+                <img src="images/themes.png">
+                <span>Themes</span>
+            </div>
+
+        </div>
+
+
+        <!-- Files -->
+
+        <div class="window" id="filesWindow">
+
+            <div class="window-bar">
+
+                <span>Files</span>
+
+                <div class="window-buttons">
+
+                    <button class="minimize">−</button>
+                    <button class="maximize">□</button>
+                    <button class="close">×</button>
+
+                </div>
+
+            </div>
+
+            <div class="window-content">
+
+                <h1>Files</h1>
+
+                <p class="small-text">
+                    My Files
+                </p>
+
+                <div class="file-list">
+
+                    <div class="file-item">
+
+                        <span>📁</span>
+
+                        <div>
+                            <strong>Documents</strong>
+                            <small>Folder</small>
+                        </div>
+
+                    </div>
+
+                    <div class="file-item">
+
+                        <span>📁</span>
+
+                        <div>
+                            <strong>Pictures</strong>
+                            <small>Folder</small>
+                        </div>
+
+                    </div>
+
+                    <div class="file-item">
+
+                        <span>📁</span>
+
+                        <div>
+                            <strong>Projects</strong>
+                            <small>Folder</small>
+                        </div>
+
+                    </div>
+
+                    <div class="file-item">
+
+                        <span>📄</span>
+
+                        <div>
+                            <strong>notes.txt</strong>
+                            <small>Text file</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Calculator -->
+
+        <div class="window calculator-window" id="calculatorWindow">
+
+            <div class="window-bar">
+
+                <span>Calculator</span>
+
+                <div class="window-buttons">
+
+                    <button class="minimize">−</button>
+                    <button class="maximize">□</button>
+                    <button class="close">×</button>
+
+                </div>
+
+            </div>
+
+            <div class="window-content">
+
+                <h1>Calculator</h1>
+
+                <input
+                    id="calculatorDisplay"
+                    type="text"
+                    readonly
+                >
+
+                <div class="calculator">
+
+                    <button data-value="7">7</button>
+                    <button data-value="8">8</button>
+                    <button data-value="9">9</button>
+                    <button data-value="/">÷</button>
+
+                    <button data-value="4">4</button>
+                    <button data-value="5">5</button>
+                    <button data-value="6">6</button>
+                    <button data-value="*">×</button>
+
+                    <button data-value="1">1</button>
+                    <button data-value="2">2</button>
+                    <button data-value="3">3</button>
+                    <button data-value="-">−</button>
+
+                    <button data-value="0">0</button>
+                    <button data-value=".">.</button>
+                    <button id="equals">=</button>
+                    <button data-value="+">+</button>
+
+                    <button id="clear">Clear</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Notes -->
+
+        <div class="window notes-window" id="notesWindow">
+
+            <div class="window-bar">
+
+                <span>Notes</span>
+
+                <div class="window-buttons">
+
+                    <button class="minimize">−</button>
+                    <button class="maximize">□</button>
+                    <button class="close">×</button>
+
+                </div>
+
+            </div>
+
+            <div class="window-content">
+
+                <h1>Notes</h1>
+
+                <p class="small-text">
+                    Write something here.
+                </p>
+
+                <textarea
+                    id="notesText"
+                    placeholder="Start writing..."
+                ></textarea>
+
+                <p class="save-text">
+                    Saved automatically
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Settings -->
+
+        <div class="window" id="settingsWindow">
+
+            <div class="window-bar">
+
+                <span>Settings</span>
+
+                <div class="window-buttons">
+
+                    <button class="minimize">−</button>
+                    <button class="maximize">□</button>
+                    <button class="close">×</button>
+
+                </div>
+
+            </div>
+
+            <div class="window-content">
+
+                <h1>Settings</h1>
+
+                <div class="settings-box">
+
+                    <h2>System</h2>
+
+                    <p>NEXORA OS</p>
+                    <p>Version 1.0</p>
+
+                </div>
+
+                <div class="settings-box">
+
+                    <h2>About</h2>
+
+                    <p>
+                        A browser-based desktop OS made by red0x.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Browser -->
+
+        <div class="window browser-window" id="browserWindow">
+
+            <div class="window-bar">
+
+                <span>Browser</span>
+
+                <div class="window-buttons">
+
+                    <button class="minimize">−</button>
+                    <button class="maximize">□</button>
+                    <button class="close">×</button>
+
+                </div>
+
+            </div>
+
+
+            <div class="browser-content">
+
+                <div class="browser-search">
+
+                    <button id="browserBack">
+                        ←
+                    </button>
+
+                    <button id="browserForward">
+                        →
+                    </button>
+
+                    <button id="browserRefresh">
+                        ↻
+                    </button>
+
+                    <input
+                        id="browserSearch"
+                        type="text"
+                        placeholder="Search or enter website"
+                    >
+
+                    <button id="browserGo">
+                        Go
+                    </button>
+
+                </div>
+
+
+                <div class="browser-page">
+
+                    <div id="browserMessage">
+
+                        <div class="browser-logo">
+                            N
+                        </div>
+
+                        <h2>NEXORA Browser</h2>
+
+                        <p>
+                            Search the web or enter a website above.
+                        </p>
+
+                        <div class="browser-links">
+
+                            <button data-site="https://www.wikipedia.org">
+                                Wikipedia
+                            </button>
+
+                            <button data-site="https://www.github.com">
+                                GitHub
+                            </button>
+
+                            <button data-site="https://www.example.com">
+                                Example
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <iframe
+                        id="browserFrame"
+                        src="about:blank"
+                    ></iframe>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Themes -->
+
+        <div class="window themes-window" id="themesWindow">
+
+            <div class="window-bar">
+
+                <span>Themes</span>
+
+                <div class="window-buttons">
+
+                    <button class="minimize">−</button>
+                    <button class="maximize">□</button>
+                    <button class="close">×</button>
+
+                </div>
+
+            </div>
+
+
+            <div class="window-content">
+
+                <h1>Themes</h1>
+
+                <p class="small-text">
+                    Choose a wallpaper
+                </p>
+
+
+                <div class="theme-list">
+
+                    <div
+                        class="theme"
+                        data-theme="dark.jpg"
+                    >
+
+                        <img src="images/dark.jpg">
+
+                        <span>Dark</span>
+
+                    </div>
+
+
+                    <div
+                        class="theme"
+                        data-theme="light.jpg"
+                    >
+
+                        <img src="images/light.jpg">
+
+                        <span>Light</span>
+
+                    </div>
+
+
+                    <div
+                        class="theme"
+                        data-theme="colorful.jpg"
+                    >
+
+                        <img src="images/colorful.jpg">
+
+                        <span>Colorful</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Bottom dock -->
+
+        <div class="dock">
+
+            <div class="dock-brand">
+
+                <div class="brand-icon small">
+                    N
+                </div>
+
+                <span>NEXORA</span>
+
+            </div>
+
+
+            <div
+                class="dock-apps"
+                id="dockApps"
+            ></div>
+
+
+            <div class="dock-right">
+
+                <span>◉</span>
+                <span>⌕</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
