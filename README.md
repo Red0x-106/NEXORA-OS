@@ -3,6 +3,7 @@
 NEXORA OS is a browser-based desktop OS that I made using HTML, CSS and JavaScript.
 
 I wanted to make a mini desktop that could run on webpages..
+https://red0x-106.github.io/NEXORA-OS/
 
 ## What is NEXORA OS?
 
