@@ -2,7 +2,8 @@
 
 NEXORA OS is a browser-based desktop OS that I made using HTML, CSS and JavaScript.
 
-I wanted to make a mini desktop that could run on webpages..
+I wanted to make a mini desktop that could run on a webpage.
+
 https://red0x-106.github.io/NEXORA-OS/
 
 ## What is NEXORA OS?
@@ -41,7 +42,7 @@ Some of the features I added are:
 
 ### Files
 
-The Files app is the place where i diplsyed the codes for Html, Css and java script
+The Files app is the place where I displayed the code files for HTML, CSS and JavaScript.
 
 It can show:
 
@@ -52,21 +53,19 @@ It can show:
 
 <img width="1919" height="910" alt="image" src="https://github.com/user-attachments/assets/7ec0aa1e-1283-4ca4-93b0-ea87092397f6" />
 
-
 ### Calculator
 
-The Calculator can calculate the values just like a regular calculator
+The Calculator can calculate values just like a regular calculator.
 
 <img width="1919" height="909" alt="image" src="https://github.com/user-attachments/assets/74c82d3f-7b6e-4c39-95bb-804828b61def" />
 
-
 ### Notes
 
-The Notes app is basically lets you to write ur notea and it saves the file automatically
+The Notes app basically lets you write your notes and saves them automatically.
 
-I used localStorage, so that even after refreashing th notes do not disappear.
+I used localStorage, so even after refreshing, the notes do not disappear.
+
 <img width="1919" height="921" alt="image" src="https://github.com/user-attachments/assets/3be4d327-7d1e-42f2-a354-d22e2e32465f" />
-
 
 ### Browser
 
@@ -78,32 +77,34 @@ The Browser app has:
 - Reload button
 - Quick links
 - Page area
+
 <img width="1914" height="913" alt="image" src="https://github.com/user-attachments/assets/dd45d4ba-f624-480c-91ad-0dc509504a5f" />
 
 ### Settings
 
-The Settings app displays the information about the browser.
-<img width="1919" height="918" alt="image" src="https://github.com/user-attachments/assets/4c30158b-f4f1-4532-ab2c-677bfd25d2db" />
+The Settings app displays information about the browser.
 
+<img width="1919" height="918" alt="image" src="https://github.com/user-attachments/assets/4c30158b-f4f1-4532-ab2c-677bfd25d2db" />
 
 ### Themes
 
-The Themes app is the one of the most interesting thing foe me in this OS.
+The Themes app is one of the most interesting things for me in this OS.
 
-It lets me cahnge the OS wallpaer upto three diffrent wallpapers and modes
+It lets me change the OS wallpaper using up to three different wallpapers and modes.
+
 <img width="1919" height="913" alt="image" src="https://github.com/user-attachments/assets/5660f73f-a723-4595-b458-7a1c7688948e" />
-
 
 ## How I Made It
 
-I started by taking refrences.
-Then I started to write the html at once.
+I started by taking references.
 
-After that I finished the css and js one after the other.
+Then I started to write the HTML at once.
 
-I kept testing the project because I didn't want to put my bet and keep going and see
-the whole thing getting spoiled.
+After that I finished the CSS and JS one after the other.
 
+I kept testing the project because I didn't want to put my best effort into it and keep going only to see the whole thing getting spoiled.
+
+I also tested the apps and windows while building them so I could find problems before moving on.
 
 ## What I Used
 
@@ -114,6 +115,18 @@ I made NEXORA using:
 - JavaScript
 
 I did not use a backend or server.
+
+## How to Use It
+
+NEXORA runs directly in the browser, so there is nothing to install.
+
+1. Open the NEXORA OS website.
+2. Use the apps on the desktop or from the dock.
+3. Open different apps and move their windows around.
+4. Try the Calculator, Notes, Files, Settings and Themes apps.
+5. Use the Themes app to change the wallpaper and mode.
+
+A modern web browser is enough to run the project.
 
 ## What I Learned
 
@@ -131,29 +144,29 @@ While making NEXORA, I learned about:
 - GitHub
 - GitHub Pages
 
-I also learned how draggable windows function and theme changing.
+I also learned how draggable windows function and how theme changing works.
 
 ## Problems I Had
 
-One problem I had was the multiple wallpaper and creating the apps.
+One problem I had was the multiple wallpapers and creating the apps.
 
-I fixed it by asking cahtgpt for finding the error.
+I fixed some of the errors by asking ChatGPT to help me find where the problems were.
 
-Another problem was the BROWSER it wasn't funtioning untill i came to know that i had to use a proxy server so I left it 
-and I will make it the next time i make an OS.
+Another problem was the Browser. It wasn't functioning properly until I found out that I would need to use a proxy server for some of the things I wanted it to do.
+
+I decided to leave that part for now instead of adding a server to the project. I may work on it the next time I make an OS.
 
 ## Why I Made It
 
-I made NEXORA because I got the idea from stardance MISSIONS
+I made NEXORA because I got the idea from Stardance missions.
 
-I wanted to check the draggable windows and the apps.
+I wanted to check how draggable windows and different apps would work in a browser-based OS.
 
-
+I also wanted to see how far I could take a normal webpage and turn it into something that feels more like a desktop.
 
 ### Main Desktop
 
 <img width="1919" height="930" alt="image" src="https://github.com/user-attachments/assets/e426effb-c5e9-4d58-b566-498413f7b5df" />
-
 
 ## Inspiration
 
