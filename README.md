@@ -48,7 +48,7 @@ It has:
 <img width="1919" height="910" alt="image" src="https://github.com/user-attachments/assets/7ec0aa1e-1283-4ca4-93b0-ea87092397f6" />
 
 
-## What I Used
+## which languages i had used
 
 I used common coding laguages:
 - HTML
@@ -56,7 +56,7 @@ I used common coding laguages:
 - JavaScript
 
 
-## How to Use It
+## how to use this
 
 NEXORA runs directly in the browser, so there is nothing to install.
 
@@ -66,23 +66,23 @@ NEXORA runs directly in the browser, so there is nothing to install.
 4. Try the Calculator, Notes, Files, Settings and Themes apps.
 5. Use the Themes app to change the wallpaper and mode.
 
-## What I Learned
+## what i learned
 
 While making NEXORA OS i learnt how to make drragable windows,
 making the apps such as calculator and the rest.
 
 
-## Problems I Had
+## problem i had
 
 the problems i had were making the drragable windows work and making those
 multiple wallpapers appear and also designing the calculator.
 
 
-### Main Desktop
+### the main view
 
 <img width="1919" height="930" alt="image" src="https://github.com/user-attachments/assets/e426effb-c5e9-4d58-b566-498413f7b5df" />
 
-## Inspiration
+## inspiration
 
 I got some ideas from browser desktop projects like NeuOS.
 
